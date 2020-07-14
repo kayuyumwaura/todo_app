@@ -36,16 +36,16 @@ set date(String newDate){
   _date = newDate;
 }
 
-Map <String, dynamic> toMap(){
-  var map = Map<String, dynamic>();
-  map["title"] _title;
-  map["description"] _description;
-  map["priority"] _priority;
-  map["date"] _date;
-  if (_id != null) {
-    map["id"] = _id;
-  }
-  return map;
+  Map <String, dynamic> toMap(){
+    var map = Map<String, dynamic>();
+    map["title"] = _title;
+    map["description"] = _description;
+    map["priority"] = _priority;
+    map["date"] = _date;
+    if (_id != null) {
+      map["id"] = _id;
+   }
+    return map;
 }
 
 Todo.fromObject(dynamic o) {
